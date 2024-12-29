@@ -24,6 +24,29 @@
             color: white;
             padding: 10px 20px;
             text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header-buttons {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .header-buttons button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .header-buttons button:hover {
+            background-color: #0056b3;
         }
         .content {
             flex: 1;
@@ -64,12 +87,25 @@
             .cricket-score {
                 padding: 15px;
             }
+            header h1 {
+                font-size: 18px;
+            }
+            .header-buttons button {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Live Cricket Scores</h1>
+        <div class="header-buttons">
+            <button>Home</button>
+            <button>Scores</button>
+            <button>Teams</button>
+            <button>Contact</button>
+        </div>
     </header>
     <div class="content">
         <div class="cricket-score">
